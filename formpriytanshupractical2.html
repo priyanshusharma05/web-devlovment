@@ -1,0 +1,100 @@
+<html>
+<head>
+    <style>
+        table{
+            border-width: 5px;
+            background-color: rgb(138, 174, 228);
+            border-radius: 10px;
+            padding: 0 30px 30px 30px;
+            border-color: rgb(129, 25, 133);
+        }
+        body{
+            color: rgb(243, 122, 122);   
+        }
+        #name ,#mail,#mobile,#add,#pass1,#pass2,#bun{
+            background-color: yellow;
+        }   
+    </style>
+    <script>
+        function checkpass(){
+            var p1= document.getElementById("pass1").value;
+            var p2= document.getElementById("pass2").value;
+            if( p1 ==  p2){
+              alert("login successfully");
+            }
+            else{
+                alert("login failed");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="xxx">
+            <table border="20" cellspacing="4">
+                <div>
+                    <tr><td>
+                    First Name</td>
+                    <td><input type="text" id="name" name="name" maxlength="20"   required><br></td>
+                    </tr>
+                    <tr><td>
+                        Last Name</td>
+                        <td><input type="text" id="name" name="name" maxlength="20"   required><br></td>
+                        </tr>
+                    <tr><td>
+                    father's Name</td>
+                    <td><input type="text" id="name" name="father" maXLENGTH="20" required><br></td>
+                    </tr>
+                    <tr><td>
+                    Mobile no.</td>
+                    <td><input type="text" id="mobile" name="mobile" minlength="10" maxlength="10" required><br></td>
+                    </tr>
+                   <tr><td>
+                    E-mail id</td>
+                    <td><input type="email" id="mail" name="email" required><br></td>
+                    </tr>
+                   <tr><td>
+                    address</td>
+                    <td><input type="text" id="add" name="address" maxlength="50" required><br></td>
+                    </tr>
+                    <tr>
+                    <td>Gender</td>
+                    </tr>
+                   <tr>
+                    <td>Male</td>
+                    <td><input type="radio" name="gender" id="gen_1" ></td>
+                    </tr>
+                  <tr><td>
+                    Female</td>
+                    <td><input type="radio" name="gender" id="gen_2" ></td>
+                    </tr>
+                  <tr><td>
+                    Doesn't exist</td>
+                    <td><input type="radio" name="gender" id="gen_3" ></td>
+                    </tr>
+                    <tr><td>
+                        photograph</td>
+                        <td><input type="file" id="file1" name="file_1" value="choosefile" required>
+                    </td>
+                    </tr>
+                    <tr><td>
+                        Signature</td>
+                        <td><input type="file" id="file2" name="file_2" value="choosefile" required>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" id="pass1" name="pass_1" required> </td>
+                    </tr>
+                    <tr>
+                        <td>Confirm Password</td>
+                        <td><input type="password" id="pass2" name="pass_2" required> </td>
+                    </tr>
+                    <tr>
+                        <td>Submit</td> 
+                        <td><button id="bun" onclick="checkpass()">submit</button> </td>
+                        </tr>
+                </div>
+            </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>Student Registration Form</title>
+<!--CSS ---->
+<style>
+h3{
+  font-family:Calibri;
+  font-size: 25pt;
+  font-style: Arial Black;
+  font-weight: bold;
+  color:rgb(26, 165, 170);(60, 0, 128);
+  text-align: center;
+  text-decoration: underline
+}
+
+table{
+  font-family:algerian;
+  color:orangered;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align:;
+  background-color:black;
+  border-collapse: collapse;
+  border: 2px solid rgb(98, 98, 202)
+}
+table.inner{
+  border: 0px
+}
+</style>
+</head>
+
+<body>
+<center><h3>STUDENT REGISTRATION FORM</h3></center>
+
+
+<table align="center" cellpadding = "10">
+
+<!-- Name -------->
+<tr>
+<td>NAME</td>
+<td><input type="text" name="Name" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+
+<!--- Addresss---->
+<tr>
+<td>Address</td>
+<td><input type="text" name="Last_Name" maxlength="60"/>
+(max 60 characters a-z and A-Z and 0-9)
+</td>
+</tr>
+
+<!-- Date Of Birth ---->
+<tr>
+<td>DATE OF BIRTH</td>
+<td><input type="date"></td>
+
+</tr>
+
+<!-- Email Id -------------->
+<tr>
+<td>EMAIL ID</td>
+<td><input type="text" name="Email" maxlength="100" />
+(email must be contain atleat one upper case and one special character,number,and @)
+</td>
+</tr>
+
+<!--- Mobile Number ------->
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" name="Mobile_Number" maxlength="10" />
+(10 digit number)
+</td>
+</tr>
+
+<!-- Gender ----->
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="Gender" value="Male" />
+Female <input type="radio" name="Gender" value="Female" />
+Lesbian <input type="radio" name="Gender" value="Lesbian" />
+non binary <input type="radio" name="Gender" value="non binary" />
+</td>
+</tr>
+<!-- Hobbies ----->
+<tr>
+<td>HOBBIES <br /><br /><br /></td>
+<td>
+playing cricket
+<input type="checkbox" name="Hobby_Cricket" value="Playing cricket" />
+Listening Music
+<input type="checkbox" name="Hobby_Listening Music" value="listeing music" />
+Gaming
+<input type="checkbox" name="Hobby_video gaming" value="Video gaming" />
+smoking
+<input type="checkbox" name="Hobby_Smoking" value="Smoking" />
+<br />
+Others
+<input type="checkbox" name="Hobby_Other" value="Other">
+<input type="text" name="Other_Hobby" maxlength="30" />
+</td>
+</tr>
+<!--- Qualification------->
+<tr>
+<td>QUALIFICATION <br /><br /><br /><br /><br /><br /><br /></td>
+<td>
+<table>
+<tr>
+<td align="center"><b>Sl.No.</b></td>
+<td align="center"><b>Examination</b></td>
+<td align="center"><b>Board</b></td>
+<td align="center"><b>Percentage</b></td>
+<td align="center"><b>Year of Passing</b></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text" name="ClassX_Board" maxlength="30" /></td>
+<td><input type="text" name="ClassX_Percentage" maxlength="30" /></td>
+<td><input type="text" name="ClassX_YrOfPassing" maxlength="30" /></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text" name="ClassXII_Board" maxlength="30" /></td>
+<td><input type="text" name="ClassXII_Percentage" maxlength="30" /></td>
+<td><input type="text" name="ClassXII_YearOfPassing" maxlength="30" /></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text" name="Graduation_Board" maxlength="30" /></td>
+<td><input type="text" name="Graduation_Percentage" maxlength="30" /></td>
+<td><input type="text" name="Graduation_YearOfPassing" maxlength="30" /></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="center">(20 char max)</td>
+<td align="center">(upto 2 decimal)</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- Course --->
+<tr>
+<td>COURSES APPLIED FOR:</td>
+<td>
+CSE
+<input type="radio" name="Course_CSE core" value="CSE core">
+CSE(AIML & IOT )
+<input type="radio" name="Course_CSE(AIML & IOT)" value="CSE(AIML & IOT)">
+ECE
+<input type="radio" name="Course_ECE" value="ECE">
+Mechanical
+<input type="radio" name="Course_Mechanical" value="Machenical">
+Mining
+<input type="radio" name="Course_Mining" value="Mining">
+</td>
+</tr>
+<!-- Submit and Reset ------>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
